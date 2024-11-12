@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Hari Ayah</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f3f4f6;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease;
+            position: relative;
+        }
+        h1 {
+            color: #4a4a4a;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-family: 'Times New Roman', serif;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #4a4a4a;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #333;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease;
+        }
+        .heart {
+            color: #ff6b6b;
+            font-size: 2em;
+            animation: heartbeat 1s infinite;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1537498425277-c283d32ef9db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZhY2V8ZW58MHx8fHwxNjIzNTMwNTQx&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Selamat Hari Ayah 💙</h1>
+        <p>Mamiq, kau adalah pahlawan tanpa jubah, pemberi kasih tanpa syarat, dan cinta tanpa batas. Di setiap langkah hidupku, aku membawa nasihatmu, keberanianmu, dan semua keindahan yang kau ajarkan. Terima kasih telah menjadi pelindung, sahabat, dan guru terbaikku.</p>
+        <p class="heart">❤️</p>
+        <p>Aku tidak bisa membalas semua yang kau berikan, tapi aku ingin kau tahu bahwa engkau selalu menjadi yang terbaik di hatiku, dan aku selalu bangga menjadi anakmu.</p>
+        <button class="button" onclick="showMessage()">Klik untuk Pesan Khusus 💌</button>
+        
+        <div class="hidden-message" id="message">
+            <p>Mamiq, meskipun kata-kata tidak pernah cukup untuk mengungkapkan betapa berharganya dirimu, aku berharap kamu tahu bahwa aku mencintaimu dengan segenap hatiku. Terima kasih telah selalu ada, menjadi sandaran, dan memberikan cinta yang tak tergantikan. Selamat Hari Mamiq, pahlawanku. Kamu selalu yang terbaik di hidupku. 🌹</p>
+            <p>— Lalu Egy Sefta Wiguna</p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
